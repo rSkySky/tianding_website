@@ -240,6 +240,7 @@ h2 {
 .general_button:hover {
     padding: 15px;
     transition: 0.3s;
+    background-color: #082b61;
     text-decoration: underline;
 }
 
