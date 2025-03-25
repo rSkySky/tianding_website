@@ -201,8 +201,9 @@ h2 {
     margin-top: 1%;
     margin-left: auto;
     margin-right: auto;
-
-    width:50%;
+    
+    text-wrap: stable;
+    width:55%;
     text-align: left;
 }
 /* ------------ navigation bar ------------ */
@@ -315,6 +316,7 @@ h2 {
 
 
 .tab {
+   
     overflow: hidden;
     margin: auto;
     margin-top: 10px;
