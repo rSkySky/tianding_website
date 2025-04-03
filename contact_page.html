@@ -34,12 +34,25 @@
             </div>
             <div class="navbar_menu">
                 <ul>
-
-                    <li><a href="contact_page.html" id="navbar_shrink">CONTACT</a> </li>
-                    <li><a href="about_page.html" id="navbar_shrink">ABOUT </a> </li>
-                    <li><a href="news_page.html" id="navbar_shrink">NEWS </a> </li>
-                    <li><a href="services_page.html" id="navbar_shrink">SERVICES</a> </li>
-                    <li><a href="index.html" id="navbar_hidetitle">HOME </a> </li>
+                    <li id ="navbar_hide12" >
+                        <button class="dropbtn" onclick="myFunction()" class="">
+                            <i class="fa fa-caret-down"></i> 
+                            MENU
+                        </button>
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="contact_page.html" id="navbar_shrink">CONTACT</a> 
+                            <a href="about_page.html" id="navbar_shrink">ABOUT </a> 
+                            <a href="news_page.html" id="navbar_shrink">NEWS </a> 
+                            <a href="catalogues_page.html" id="navbar_shrink">CATALOGUES</a> 
+                            <a href="services_page.html" id="navbar_shrink">SERVICES</a>  
+                        </div>
+                    </li>
+                    <li id = "navbar_hide11"><a href="contact_page.html" id="navbar_shrink">CONTACT</a> </li>
+                    <li id = "navbar_hide11"><a href="about_page.html" id="navbar_shrink">ABOUT </a> </li>
+                    <li id = "navbar_hide11"><a href="news_page.html" id="navbar_shrink">NEWS </a> </li>
+                    <li id = "navbar_hide11"><a href="catalogues_page.html" id="navbar_shrink">CATALOGUES</a> </li>
+                    <li id = "navbar_hide11"><a href="services_page.html" id="navbar_shrink">SERVICES</a> </li>
+                    <li id = "navbar_hide11"><a href="index.html" id="navbar_hidetitle">HOME </a> </li>
                 </ul>
             </div>
         </div>
@@ -104,9 +117,9 @@
 
 
                         </li>
-                        <li style=" display: block; float: left;  color: #000000; width: 55%;">
+                        <li style=" display: block; float: left;  color: #000000; width: 60;">
                             <h2>Email us</h2>
-                            <p > Click below to send an e-mail to tiandingint@outlook.com</p>
+                            <p> Click below to send an e-mail to tiandingint@outlook.com</p>
                             <p style="font-size: 12px;">Send us a query, quote request, freight order etc.</p>
                             
                             <a href= "mailto: tiandingint@outlook.com ?cc=lijiarun395@gmail.com" class="general_button"> EMAIL US </a>
@@ -125,7 +138,7 @@
                                 <li style="float: left;">
 
                                     <a href="https://www.facebook.com/profile.php?id=61573543042136">
-                                        <img src="assets\Facebook_icon_2013.svg.png" alt="FB logo"
+                                        <img src="assets\Facebook_icon_2013.svg.png" alt="FB logo"  
                                             style=" width:40px;height:width; ">
                                     </a>
                                     <a href="http://m.me/626786877174268">
@@ -201,7 +214,23 @@
 
         <!--FOOTER -->
     </div>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
 
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>
