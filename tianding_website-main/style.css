@@ -1,0 +1,522 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 18px;
+}
+
+h2 {
+    margin-bottom: 8px;
+}
+
+.fit_image {
+    object-fit: cover;
+    width: 100%;
+}
+
+.main {
+    width: 100%;
+    background-position: center;
+    background-color: #fcfcfc;
+    background-size: cover;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+/* ------------ navigation bar ------------ */
+.navbar {
+    z-index: 10;
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    padding-top: 0%;
+    position: fixed;
+}
+
+
+.icon {
+    color: #ffffff;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+
+
+    position: absolute;
+    padding-top: 14px;
+    cursor: pointer;
+
+}
+
+
+
+.navbar_menu {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 100%;
+    float: right;
+    height: 50px;
+}
+
+.navbar_rect {
+    position: relative;
+    height: 0px;
+    width: 100%;
+    background-color: #0E48A0;
+}
+
+.navbar_menu ul {
+    background-color: #0E48A0;
+    list-style-type: none;
+    padding: 0px;
+    padding-right: 2%;
+    margin: 0px;
+
+    overflow: hidden;
+
+}
+
+.navbar_menu button{
+    background-color: #0E48A0;
+    list-style-type: none;
+    padding: 0px;
+    padding-right: 2%;
+    margin: 0px;
+    border: none;
+    overflow: hidden;
+
+}
+
+
+.navbar_menu a {
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    padding-right: 1.3vw;
+    padding-left: 1.3vw;
+    display: block;
+    text-align: center;
+}
+
+.navbar_menu button{
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    padding-right: 1.3vw;
+    padding-left: 1.3vw;
+    display: block;
+    text-align: center;
+}
+
+
+
+.navbar_menu a:hover {
+    text-decoration: solid;
+    background-color: #082b61;
+    text-decoration: underline;
+    transition: 0.3s;
+
+}
+.navbar_menu button:hover {
+    text-decoration: solid;
+    background-color: #082b61;
+    text-decoration: underline;
+    transition: 0.3s;
+
+}
+.navbar_menu li {
+    float: right;
+}
+
+
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+  
+ 
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right:5px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    right: 500px;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .show {
+    display: block;
+  }
+
+/* ------------ HALF ------------ */
+@media only screen and (max-width: 1300px) {
+    #fadeshow2 {
+        display: none;
+    }
+
+}
+
+/* ------------ NAVBAR MENU ------------ */
+@media only screen and (max-width: 500px) {
+    #navbar_hide11 {
+        display: none;
+    }
+}
+@media only screen and (min-width: 499px) {
+    #navbar_hide12 {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1050px) {
+    #fadeshowWIDE {
+        display: none;
+    }
+}
+ 
+/* ------------ PHONE ------------ */
+@media only screen and (max-width: 990px) {
+    #hide_navbar_phone{
+        display: none;
+    }
+ 
+    #fadeshow1 {
+        display: none;
+    }
+
+    #fold_element {
+        float: none;
+        width: 100%;
+        margin-left: 1%;
+    }
+
+    #shrink_element {
+        
+        width: 600px
+    }
+
+    #shrink_image {
+        width: 300px;
+        margin-left: 0%;
+        height: 250px;
+    }
+
+    #expand_text {
+        list-style: none;
+        width: 100%;
+        margin-left: 0%;
+        margin-bottom: 60px;
+    }
+    #expand_text_news{
+        list-style: none;
+        width: 100%;
+        margin-left: 0%;
+        margin-bottom: 120px;
+    }
+    #expand_text_services{
+        list-style: none;
+        width: 100%;
+        margin-left: 0%;
+        margin-bottom: 350px;
+    }
+    #shrink_gif {
+        width: 350px;
+    }
+    #navbar_shrink{
+        font-size: 12px;
+    
+    }
+    #navbar_hidetitle{
+        display: none;
+    
+    }
+    #contact_shrink{
+        size:30;
+    }
+
+
+
+    
+}
+
+.index_gif{
+    width: 650px;
+}
+
+.index_image {
+    margin-left: 5%;
+    object-fit: cover;
+    width: 500px;
+    height: 300px;
+}
+.index_text{
+    width: 50%;
+    float:left;
+    margin-left: 5%;
+}
+.news_text{
+    list-style: none;
+  
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    text-wrap: stable;
+    width:55%;
+    text-align: left;
+}
+/* ------------ navigation bar ------------ */
+
+.contact_us_section {
+    position: relative;
+    color: #0E48A0;
+    background-color: white;
+    text-decoration: none;
+
+    margin-top: 10%;
+
+    bottom: -30px;
+    padding: 14px
+}
+
+.contact_us_section:hover {
+    padding: 18;
+    font-size: 17px;
+    transition: 0.3s;
+    text-decoration: underline;
+}
+
+.general_button {
+    position: relative;
+    color: #ffffff;
+    background-color: #0E48A0;
+    text-decoration: none;
+    bottom: -30px;
+    padding: 14px;
+    margin-bottom: 50px;
+}
+
+.general_button:hover {
+    padding: 15px;
+    transition: 0.3s;
+    background-color: #082b61;
+    text-decoration: underline;
+}
+
+/* ------------ body content 01 ------------ */
+
+
+
+.container {
+    position: relative;
+}
+
+.PDF_viewer{
+    width:100%;
+    height:900px;
+}
+.image_centered_text {
+
+    position: absolute;
+    text-align: center;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image_centered_text h1 {
+    text-shadow: 0px 4px 4px #000000;
+}
+
+.image_centered_text p {
+    text-shadow: 0px 4px 4px #000000;
+}
+
+.image_centered_text li {
+
+    float: left;
+    margin-left: 50%;
+    margin: 4px;
+    background-color: #0E48A0;
+    text-align: center;
+}
+
+.image_centered_text ul {
+
+    height: auto;
+
+    list-style-type: none;
+    padding: 0px;
+    margin: 5px;
+    margin-top: 12px;
+    display: inline-block;
+    overflow: hidden;
+
+}
+
+.image_centered_text a {
+    
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+
+    display: block;
+    text-align: center;
+}
+
+.image_centered_text a:hover {
+    background-color: #082b61;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+
+.body_rect {
+    padding-top: 40px;
+
+    height: 80%;
+    width: 100%;
+     
+}
+
+
+.tab {
+   
+    overflow: hidden;
+    margin: auto;
+    margin-top: 10px;
+    width: 100%;
+
+
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: rgb(238, 238, 238);
+    margin: 0.2%;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #0E48A0;
+    color: #ffffff;
+    transition: 0.3s;
+
+
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #082b61;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.tabcontent {
+    display: none;
+    list-style: none;
+    
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    
+    
+    text-align: left;
+    margin-bottom: 390px;
+}
+
+.tabcontent_news{
+    display: none;
+    list-style: none;
+    
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+    
+    text-align: left;
+    margin-bottom: 100px;
+}
+
+/* ------------ body content 01 ------------ */
+
+
+
+/* ------------ FOOTER ------------ */
+
+
+.footer_text_l {
+
+    margin-top: 180px;
+    color: rgb(196, 196, 196);
+    position: relative;
+    bottom: 0px;
+   
+}
+
+
+.footer_text_l ul {
+    padding-bottom: 10px;
+    list-style-type: none;
+
+   
+    padding-top: 10px;
+    padding-bottom: 150px;
+    
+    padding: auto;
+
+}
+
+.footer_text_l li {
+    margin-left: 10%;
+    margin-right: 10%;
+    
+    float: left;
+    display: block;
+    
+    color: rgb(196, 196, 196);
+}
+
+
+/* ------------ FOOTER ------------ */
